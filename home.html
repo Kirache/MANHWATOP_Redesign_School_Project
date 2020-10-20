@@ -2,169 +2,337 @@
 
 <html>
     <head>
-        <title>Personas & Storyboarding</title>
+        <title>Survive as the Hero's Wife</title>
         <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/39f0916786.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
     </head>
-
     <body>
-        <div class="content-container">
-            <img class="full-width-top" src="./images/scroll.png" alt="Parchment Scroll">
-
-            <h1>
-                A Tale of Washing Machines
-            </h1>
-
-            <div class="main-text">
-                <!-- Intro and Observations-->
-                <p>Washing machine interfaces come in various designs. What type of interface suits the average user?</p>
-
-                <p>Unfortunately, due to Covid-19 concerns, I was unable to observe a washing machine in its
-                natural wild environment the laundromat. Instead, I chose this washing machine in my house : </p>
-
-                <img class="image" src="./images/interface_closeup.png" alt="Washing Machine Interface Closeup Sketch">
-
-                <img class="image" src="./images/interface_sketch.png" alt="Washing Machine Interface Sketch">
-
-                <p>I observed 3 people from my group of friends and family use my washing machine on their own without any
-                    interaction with me, and then interviewed them about their experience.</p>
-
-                <h3> Observations Summary : </h3>
-
-                <ul>
-                    <li> User 1 and User 2 opened and loaded the machine quickly, while User 3 first looked at the
-                        buttons then pushed the door before finally pulling the door open. </li>
-                    <li> After loading, all three users quickly turned on the machine and started
-                        the washing cycle. </li>
-                    <li> User 3 looked at the buttons on the right section of the interface, while User 1 and User 2
-                        only looked at the buttons in the middle. </li>
-                    <li> All users only used the buttons in the middle. </li>
-                    <li> All users looked at and left the middle dial in its original position, on “NORMAL CASUAL.” </li>
-                </ul>
-                <!-- End Intro and Observations -->
-
-                <!-- Questions -->
-                <div class="questions">
-                    <h3>Interview Questions :</h3>
-
-                    <ol>
-                        <li>What do you use the machine for? What kind of clothes do you wash with it? </li>
-
-                        <li>What do you expect or want of the interface? What is most important? </li>
-
-                        <li>Please explain to me how to use the machine. </li>
-
-                        <li>What has been your experience with the interface? What do you like and dislike about it? </li>
-
-                        <li>What parts of the interface are clear or unclear? </li>
-
-                        <li>Describe your ideal interface for this machine. What is most important? </li>
-                    </ol>
+        <!-- Header -->
+        <div class="head-container">
+            <div class="header">
+                <a href="#HOME"><img class="logo" src="./images/logo.png" alt="Home Button"></a>
+                <div class="header-section-left">
+                    <a class="nav-button" href="#GENRES">Genres</a>
+                    <a class="nav-button" href="#POPULAR">Popular</a>
+                    <a class="nav-button" href="#NEW">New Updates</a>
                 </div>
-                <!-- End Questions -->
+                <div class="header-section">
+                    <a class="nav-button" href="#DONATE">Donate</a>
+                    <input type="search" placeholder="Search..."><a href="#SEARCH"><button><i class="fa fa-search fa-lg"></i></button></a>
+                    <a class="nav-button" href="#LOGIN">Log In</a>
+                    <a href="javascript:void(0);" onclick="myFunction()" id="hamburger">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-                <!-- Answers -->
-                <h3>Interview Response Summary : </h3>
+        <div id="links">
+            <a href="#GENRES">Genres</a>
+            <a href="#POPULAR">Popular</a>
+            <a href="#NEW">New Updates</a>
+            <a href="#Donate">Donate</a>
+            <a href="#Log In">Log In</a>
+        </div>
 
-                <p>All three users found the middle section of buttons to be clear and easy to use. They found the right
-                    side to be more complicated and some users were confused about how to use the right side, but this did
-                    not interfere with their ability to wash laundry. Some users gave conflicting statements throughout their
-                    interview.
-                </p>
+        <!-- Main Content -->
+        <div class="content-container">
 
-                <p>
-                    User 1 Comments :
-                    <ul>
-                        <li> Button layout is perfect, interface works well and is clear, but would prefer simpler overall
-                            interface </li>
-                        <li> Was surprised to discover new functionality while explaining how to use machine </li>
-                        <li> Says it is difficult to understand extra functionality because she is not a native English speaker </li>
-                    </ul>
-
-                    User 2 Comments :
-                    <ul>
-                        <li> Interface is very clear and very easy to use </li>
-                        <li> Doesn't know what buttons on the right do and never uses them, but likes that the option is there </li>
-                        <li> Interface is complicated and fancy, mentions "maybe it's more better for a housekeeper or
-                            someone professional" several times </li>
-                        <li> Doesn't care if interface is simple or detailed, both ways are fine for him </li>
-                    </ul>
-
-                    User 3 Comments :
-                    <ul>
-                        <li> Button interface is clear, but door design is "really bad" because there is no label or indicator </li>
-                        <li> Ideal interface is a touch screen and bluetooth </li>
-                        <li> Would prefer a super straightforward interface that tells accurately and exactly when the laundry
-                            will be done </li>
-                    </ul>
-                </p>
-                <!-- End Answers -->
-
-                <!-- Personas -->
-                <h3> Personas : </h3>
-
-                <p>I created 2 personas based on these interviews to better understand users : Simple Sally and Cool Dan.</p>
-
-                <h4 class="centered-text">Simple Sally</h4>
-
-                <img class="image" src="./images/simplesally.png" alt="Simple Sally Persona">
-
-                <p>Simple Sally is a retired mother with adult children. She is easygoing and tends to choose the path of least
-                    resistance. </p>
-
-                <p>As someone who just wants things quick and simple, she doesn’t want to explore or read the details. This makes
-                    her uninterested in complicated interfaces and skip over anything unnecessary. </p>
-
-                <p>All three users had in common that they liked clear, easy to user interfaces and did not make use of the additional
-                    features on the right of the washing machine, so I made a persona focused on keeping it simple and easy. </p>
-
-                <h4 class="centered-text">Cool Dan</h4>
-
-                <img class="image" src="./images/cooldan.png" alt="Cool Dan Persona">
-
-                <p>Cool Dan is a college senior studying economics. He likes high tech gadgets, although he only uses them for their
-                    basic functionality. </p>
-
-                <p>Cool Dan faces a conflict when he picks an interface to use, as his tastes conflict with his actual use of the interface.
-                    He wants an interface that is complex and has lots of functionality, yet is simple and easy to use. </p>
-
-                <p>Cool Dan is based on a mix of User 2 and User 3. User 2 and User 3 both enjoy the option of additional functionality,
-                    but tend to not use it. </p>
-
-                <!-- End Answers -->
-
-                <!-- Storyboarding -->
-                <h3>Storyboarding :</h3>
-
-                <p>I created a storyboard to better understand a user's journey interating with the washing machine.</p>
-
-                <img class="image" src="./images/storyboard.png" alt="Simple Sally Storyboard">
-
-
-                <!-- End Storyboarding -->
-
-
-                <!-- Takeaways -->
-                <h3> Takeaways :</h3>
-
-                <p>Throughout this exercise, I learned a lot about understanding and empathizing with users. I found it very interesting
-                that what users say and what they are drawn to do not necessarily match with what they will use. </p>
-
-                <p>For example, User 1 called the interface "perfect" but also later expressed that she prefered a simpler interface and had difficulty understanding
-                parts of the interface. User 2 first called the interface "clear and easy to use," then called it "complicated and fancy." He staid
-                he likes the control that the interface gives, yet he also says that he does not use any buttons apart from the basic controls in
-                the middle. </p>
-
-                <p>I learned that it is not enough to only listen to the preferences the users say they have, it is also important to observe
-                the users actions and what they actually do when using an interface. </p>
-
-            <!-- End main-text-->
+            <!-- Manhwa Info -->
+            <div class="title">
+                <h1>
+                    Survive as the Hero's Wife
+                </h1>
+                <img id="flag" src="./images/korean.png" alt="Korean Flag">
+                <p>Latest Chapter: 2 days ago</p>
             </div>
 
-            <br>
-            <br>
-            <img class="full-width-bottom" src="./images/scroll.png" alt="Parchment Scroll">
-        <!--End content-container-->
+            <div class="info">
+                <div class="info-left">
+                    <img id="main-cover" src="./images/cover.png" alt="Manhwa Cover">
+                    <div id="tag-donate">
+                        <div class="tags">
+                            <a class="tag-button" href="#TAG">Fantasy</a>
+                            <a class="tag-button" href="#TAG">Nobility</a>
+                            <a class="tag-button" href="#TAG">Reincarnation</a>
+                            <a class="tag-button" href="#TAG">Romance</a>
+                            <a class="tag-button" href="#TAG">Villainess</a>
+                        </div>
+                        <a id="donate" href="#DONATE">Support Us!</a>
+                    </div>
+                </div>
+
+                <div class="info-right">
+                    <div class="info-top">
+                        <div id="star-chapter">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div id="bookmark-comment">
+                            <a class="read-button" href="#FIRSTCHAPTER">Read First</a>
+                            <a class="read-button" href="#LASTCHAPTER">Read Last</a>
+                            <a href="#comments"><button><i class="fa fa-comment fa-lg comment"></i></button></a>
+                            <a href="#LOGIN"><button><i class="fa fa-bookmark fa-lg bookmark"></i></button></a>
+                        </div>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>Rating</td>
+                            <td> 4.8 / 5 out of 91</td>
+                        </tr>
+                        <tr>
+                            <td>Summary</td>
+                            <td>Canaria has been reincarnated as the villain of a popular cliché novel.
+                                According to the novel, she is destined to be executed by her husband!
+                                Determined to survive, her objective is simple: get a divorce! Will her
+                                plans be enough to save her life, or will unexpected circumstances arise
+                                to complicate matters even further?</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>Ongoing</td>
+                        </tr>
+                        <tr>
+                            <td>Release</td>
+                            <td>2018</td>
+                        </tr>
+                        <tr>
+                            <td>Rank</td>
+                            <td>17th, it has 178.7K monthly views</td>
+                        </tr>
+                        <tr>
+                            <td>Alternate Titles</td>
+                            <td>This Villainess Wants a Divorce!</td>
+                        </tr>
+                        <tr>
+                            <td>Authors</td>
+                            <td>Abin, Nokki</td>
+                        </tr>
+                        <tr>
+                            <td>Artists</td>
+                            <td> Abin</td>
+                        </tr>
+                        <tr>
+                            <td>Genres</td>
+                            <td>Fantasy, Manhwa, Romance, Shoujo</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Chapters -->
+            <div class="color-back">
+                <div class="chapters">
+                    <h1>Chapters</h1>
+                    <table id="chapter-table">
+                        <tr>
+                            <td>Chapter 11</td>
+                            <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>Chapter 10</td>
+                            <td>4 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>Chapter 9</td>
+                            <td>6 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>Chapter 8</td>
+                            <td>6 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>Chapter 7</td>
+                            <td>6 days ago</td>
+                        </tr>
+                        <tr class="more-chapters">
+                            <td>Chapter 6</td>
+                            <td>6 days ago</td>
+                        </tr>
+                        <tr class="more-chapters">
+                            <td>Chapter 5</td>
+                            <td>6 days ago</td>
+                        </tr>
+                        <tr class="more-chapters">
+                            <td>Chapter 4</td>
+                            <td>6 days ago</td>
+                        </tr>
+                        <tr class="more-chapters">
+                            <td>Chapter 3</td>
+                            <td>6 days ago</td>
+                        </tr>
+                        <tr class="more-chapters">
+                            <td>Chapter 2</td>
+                            <td>6 days ago</td>
+                        </tr>
+                        <tr class="more-chapters">
+                            <td>Chapter 1</td>
+                            <td>6 days ago</td>
+                        </tr>
+                    </table>
+                    <button onclick="readMore()" id="chapter-button">Show More</button>
+                </div>
+            </div>
+
+            <!-- You May Also Like -->
+            <div class="suggestions">
+                <h1>You May Also Like</h1>
+                <div class="row-flex">
+                    <div class="manhwa">
+                        <a href="#EMPRESS">
+                        <img class="suggested-image" src="./images/empress.png" alt="Manhwa Cover">
+                        <p>The Abandoned Empress</p>
+                        </a>
+                    </div>
+                    <div class="manhwa">
+                        <a href="#CHILD">
+                        <img class="suggested-image" src="./images/child.png" alt="Manhwa Cover">
+                        <p>I Am a Child of This House</p>
+                        </a>
+                    </div>
+                    <div class="manhwa">
+                        <a href="#WMMAP">
+                        <img class="suggested-image" src="./images/wmmap.jpg" alt="Manhwa Cover">
+                        <p>Who Made me a Princess</p>
+                        </a>
+                    </div>
+                    <div class="manhwa">
+                        <a href="#VILLAINESS">
+                        <img class="suggested-image" src="./images/villainess.png" alt="Manhwa Cover">
+                        <p>What It Takes to be a Villainess</p>
+                        </a>
+                    </div>
+                    <div class="manhwa">
+                        <a href="#TEA">
+                        <img class="suggested-image" src="./images/tea.png" alt="Manhwa Cover">
+                        <p>The Duchess’ 50 Tea Recipes</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discussion -->
+            <div class="discussion" id="comments">
+                <h1>Discussion</h1>
+                <div class="comment-section">
+                    <div class="single-comment">
+                        <img class="profile" src="./images/profile.png" alt="Profile Picture">
+                        <div class="comment-right">
+                            <div class="profile-info">
+                                <b>Ann63</b> <span> &nbsp;&nbsp;11 days ago</span>
+                            </div>
+                            <div class="profile-info">
+                                I hope it updates soon!
+                            </div>
+                            <div>
+                                7&nbsp;&nbsp;
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-up"></i></i></button></a>
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-down"></i></i></button></a>
+                                &nbsp;&nbsp;<a href="#LOGIN">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-comment">
+                        <img class="profile" src="./images/profile.png" alt="Profile Picture">
+                        <div class="comment-right">
+                            <div class="profile-info">
+                                <b>Sarah</b> <span> &nbsp;&nbsp;16 days ago</span>
+                            </div>
+                            <div class="profile-info">
+                                This is my favorite!!!! I love it so much I went and tried to find the webnovel
+                                but it was in Korean so I couldn't read it. Maybe I should learn Korean? I'm
+                                really just making a longer comment here to show what happens when the comments
+                                are not one line.
+                            </div>
+                            <div>
+                                4&nbsp;&nbsp;
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-up"></i></i></button></a>
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-down"></i></i></button></a>
+                                &nbsp;&nbsp;<a href="#LOGIN">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-comment">
+                        <img class="profile" src="./images/profile.png" alt="Profile Picture">
+                        <div class="comment-right">
+                            <div class="profile-info">
+                                <b>manhwalover10</b> <span> &nbsp;&nbsp;21 days ago</span>
+                            </div>
+                            <div class="profile-info">
+                                I love manhwa! SPAAAAAAAAM!
+                            </div>
+                            <div>
+                                0&nbsp;&nbsp;
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-up"></i></i></button></a>
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-down"></i></i></button></a>
+                                &nbsp;&nbsp;<a href="#LOGIN">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-comment-more">
+                        <img class="profile" src="./images/profile.png" alt="Profile Picture">
+                        <div class="comment-right">
+                            <div class="profile-info">
+                                <b>manhwalover10</b> <span> &nbsp;&nbsp;21 days ago</span>
+                            </div>
+                            <div class="profile-info">
+                                SPAAAAAAAAM!
+                            </div>
+                            <div>
+                                -4&nbsp;&nbsp;
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-up"></i></i></button></a>
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-down"></i></i></button></a>
+                                &nbsp;&nbsp;<a href="#LOGIN">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-comment-more">
+                        <img class="profile" src="./images/profile.png" alt="Profile Picture">
+                        <div class="comment-right">
+                            <div class="profile-info">
+                                <b>manhwalover10</b> <span> &nbsp;&nbsp;21 days ago</span>
+                            </div>
+                            <div class="profile-info">
+                                SPAAAAAAAAM! SPAAAAAAAAM! SPAAAAAAAAM!
+                            </div>
+                            <div>
+                                -4&nbsp;&nbsp;
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-up"></i></i></button></a>
+                                <a href="#LOGIN"><button><i class="fas fa-chevron-down"></i></i></button></a>
+                                &nbsp;&nbsp;<a href="#LOGIN">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="commentMore()" id="comment-button">Show More</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="header-section">
+                <a href="#FACEBOOK"><img class="icon" src="./images/facebook.png" alt="Facebook"></a>
+                <a href="#INSTAGRAM"><img class="icon" src="./images/instagram.png" alt="Instagram"></a>
+                <a href="#TWITTER"><img class="icon" src="./images/twitter.png" alt="Twitter"></a>
+                <a href="#YOUTUBE"><img class="icon" src="./images/youtube.png" alt="Youtube"></a>
+                <a href="#FLICKR"><img class="icon" src="./images/flickr.png" alt="Flickr"></a>
+                <a href="#PINTRIST"><img class="icon" src="./images/pintrist.png" alt="Pintrist"></a>
+                <a href="#EMAIL"><img class="icon" src="./images/email.png" alt="Email"></a>
+            </div>
+            <div class="header-section">
+                <a class="nav-button-bot" href="#HOME">MANHWATOP</a>
+                <a class="nav-button-bot" href="#CONTACT">Contact Us</a>
+                <a class="nav-button-bot" href="#ABOUT">About Us</a>
+                <a class="nav-button-bot" href="#PRIVACY">Privacy Policy</a>
+                <a class="nav-button-bot" href="#COOKIES">Cookie Policy</a>
+            </div>
         </div>
     </body>
 </html>
